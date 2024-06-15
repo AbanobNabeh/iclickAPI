@@ -1,0 +1,32 @@
+<?php
+
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
+
+return new class extends Migration
+{
+    /**
+     * Run the migrations.
+     */
+    public function up(): void
+    {
+        Schema::create('notification', function (Blueprint $table) {
+            $table->id();
+            $table->string('fromuser');
+            $table->string('touser');
+            $table->string('type');
+            $table->string('link');
+            $table->boolean('seen');
+            $table->dateTime('date');
+        });
+    }
+
+    /**
+     * Reverse the migrations.
+     */
+    public function down(): void
+    {
+        Schema::dropIfExists('notification');
+    }
+};
