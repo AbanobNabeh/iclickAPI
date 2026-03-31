@@ -453,6 +453,64 @@
         width: 100%;
       }
     }
+
+    .footer-container {
+      max-width: 1480px;
+      margin: 0 auto 32px;
+      padding: 22px 32px;
+      border-radius: 24px;
+      background: rgba(11, 16, 29, 0.9);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      backdrop-filter: blur(28px);
+      box-shadow: 0 28px 72px rgba(0, 0, 0, 0.16);
+      display: flex;
+      flex-wrap: wrap;
+      gap: 18px;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .footer-credit {
+      color: #c0d0ee;
+      font-size: 0.95rem;
+      letter-spacing: 0.01em;
+    }
+
+    .footer-credit strong {
+      color: #ffffff;
+    }
+
+    .footer-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .social-link {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 42px;
+      height: 42px;
+      border-radius: 14px;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      color: #c1d2f6;
+      text-decoration: none;
+      transition: transform 0.2s ease, background 0.2s ease, color 0.2s ease;
+    }
+
+    .social-link:hover {
+      transform: translateY(-2px);
+      background: rgba(95, 148, 255, 0.18);
+      color: #ffffff;
+    }
+
+    .social-link svg {
+      width: 18px;
+      height: 18px;
+      fill: currentColor;
+    }
   </style>
 </head>
 <body>
@@ -902,5 +960,28 @@
 
     renderEndpoint(activeEndpoint);
   </script>
+  <footer class="footer-container">
+    <div class="footer-credit">Codeed by <strong>Abanob Nabeh</strong></div>
+    <div class="footer-links">
+      <a href="https://discord.com/users/979502686225461318" target="_blank" rel="noopener" class="social-link" aria-label="Discord">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.317 4.369a19.791 19.791 0 00-4.885-1.515.07.07 0 00-.074.037 13.66 13.66 0 00-.59 1.204 18.827 18.827 0 00-5.778 0 12.81 12.81 0 00-.603-1.204.069.069 0 00-.074-.037 19.736 19.736 0 00-4.886 1.515.062.062 0 00-.028.023C2.83 9.04 2.27 13.573 2.54 18.057a.082.082 0 00.031.056 19.9 19.9 0 006.041 3.07.07.07 0 00.077-.027 13.914 13.914 0 001.212-1.86.07.07 0 00-.034-.097 11.133 11.133 0 01-1.588-.762.07.07 0 01-.006-.118c.106-.08.212-.163.311-.248a.07.07 0 01.073-.01c3.327 1.519 6.927 1.519 10.218 0a.07.07 0 01.075.01c.099.085.205.168.311.248a.07.07 0 01-.006.118 11.174 11.174 0 01-1.588.762.07.07 0 00-.034.097 13.877 13.877 0 001.212 1.86.07.07 0 00.077.027 19.869 19.869 0 006.04-3.07.082.082 0 00.032-.056c.533-5.177-.838-9.67-2.673-13.665a.061.061 0 00-.028-.023zm-11.42 9.707c-1.183 0-2.156-1.085-2.156-2.419 0-1.333.955-2.418 2.156-2.418 1.21 0 2.18 1.098 2.155 2.418 0 1.334-.955 2.419-2.155 2.419zm6.174 0c-1.183 0-2.156-1.085-2.156-2.419 0-1.333.955-2.418 2.156-2.418 1.21 0 2.18 1.098 2.155 2.418 0 1.334-.945 2.419-2.155 2.419z"/></svg>
+      </a>
+      <a href="https://github.com/AbanobNabeh" target="_blank" rel="noopener" class="social-link" aria-label="GitHub">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.167 6.839 9.489.5.092.682-.217.682-.483 0-.237-.009-.868-.014-1.703-2.782.604-3.369-1.342-3.369-1.342-.454-1.153-1.11-1.461-1.11-1.461-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.529 2.341 1.088 2.91.833.091-.647.349-1.088.636-1.338-2.22-.253-4.555-1.112-4.555-4.944 0-1.091.39-1.984 1.032-2.682-.103-.253-.447-1.27.098-2.645 0 0 .84-.269 2.75 1.025A9.563 9.563 0 0112 6.845c.85.004 1.705.115 2.504.338 1.909-1.294 2.748-1.025 2.748-1.025.547 1.375.203 2.392.1 2.645.644.698 1.031 1.591 1.031 2.682 0 3.842-2.338 4.687-4.566 4.937.359.308.678.918.678 1.852 0 1.336-.012 2.415-.012 2.744 0 .268.18.579.688.48C19.137 20.165 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg>
+      </a>
+      <a href="https://instagram.com/AbanobNabeeh" target="_blank" rel="noopener" class="social-link" aria-label="Instagram">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7.75 2h8.5A5.75 5.75 0 0122 7.75v8.5A5.75 5.75 0 0116.25 22h-8.5A5.75 5.75 0 012 16.25v-8.5A5.75 5.75 0 017.75 2zm0 1.5A4.25 4.25 0 003.5 7.75v8.5A4.25 4.25 0 007.75 20.5h8.5a4.25 4.25 0 004.25-4.25v-8.5A4.25 4.25 0 0016.25 3.5h-8.5zm8.75 2.25a.75.75 0 110 1.5.75.75 0 010-1.5zm-4.25 1.25a5.25 5.25 0 110 10.5 5.25 5.25 0 010-10.5zm0 1.5a3.75 3.75 0 100 7.5 3.75 3.75 0 000-7.5z"/></svg>
+      </a>
+      <a href="https://ko-fi.com/abanobnabeh" target="_blank" rel="noopener" class="social-link" aria-label="Ko-fi">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5C7.03 2.5 3 6.53 3 11.5c0 5.5 5.91 9.45 8.4 10.86a1.15 1.15 0 001.2 0C15.09 20.95 21 17 21 11.5 21 6.53 16.97 2.5 12 2.5zm0 15.5c-2.82-.18-6.4-2.58-6.4-6.5 0-3.5 2.85-6.3 6.4-6.5 3.55.2 6.4 3 6.4 6.5 0 3.92-3.58 6.32-6.4 6.5z"/><path d="M10.5 8.75h1.1c.42 0 .76.34.76.76v5.02a.75.75 0 01-1.5 0V9.49h-.36a.74.74 0 01-.75-.74c0-.41.34-.74.75-.74zm3.76 2.04a.75.75 0 011.5 0v3.1a.75.75 0 01-1.5 0v-3.1z"/></svg>
+      </a>
+      <a href="https://www.linkedin.com/in/abanob-nabeh-181493224" target="_blank" rel="noopener" class="social-link" aria-label="LinkedIn">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.94 6.5a2.06 2.06 0 11-.001 4.122A2.06 2.06 0 016.94 6.5zm.06 4.98H4.5V20h2.5V11.48zm4.88 0h-2.5V20h2.5v-4.9c0-1.18.1-2.7 1.64-2.7 1.55 0 1.56 1.32 1.56 2.78V20h2.5v-5.2c0-3.7-.78-5.3-4.1-5.3-1.86 0-2.63 1.03-3.08 1.75h.04V11.5z"/></svg>
+      </a>
+      <a href="https://www.facebook.com/abanobnabeeh" target="_blank" rel="noopener" class="social-link" aria-label="Facebook">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.43 8.86 8 9.8V15H8v-3h2v-2.2C10 8.8 11 8 12.76 8c.85 0 1.53.06 1.74.09v2.02h-1.2c-.94 0-1.12.45-1.12 1.1V12h2.3l-.3 3H13.3v6.8c4.57-.94 8-4.96 8-9.8z"/></svg>
+      </a>
+    </div>
+  </footer>
 </body>
 </html>
