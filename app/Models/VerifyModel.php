@@ -11,7 +11,7 @@ class VerifyModel extends Model
     public $timestamps = false;
     protected $table = 'verifyotp';
     protected $fillable =[
-     
+        'id',
         'email',
         'otp'
     ];
